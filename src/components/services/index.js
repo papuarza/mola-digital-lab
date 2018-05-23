@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Service from './service.js'
-
+import './Services.css';
 
 
 class Services extends Component {
@@ -9,7 +9,7 @@ class Services extends Component {
   }
   render() {
     return (
-      <div style={styles.servicesWrapper}>
+      <div className="services-wrapper">
       {
         this.props.services.map(service => {
           return <Service data={service}></Service>
@@ -18,15 +18,6 @@ class Services extends Component {
       </div>
       
     );
-  }
-}
-
-const styles = {
-  servicesWrapper: {
-    display: 'flex',
-    padding: '5% 8%',
-    margin: '0 auto',
-    justifyContent: 'center'
   }
 }
 

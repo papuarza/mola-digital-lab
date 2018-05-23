@@ -1,0 +1,101 @@
+.contact-form-wrapper {
+  width: 60%;
+  margin-left: 4%;
+  margin-top: 100px;
+  background-color: #fff;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  padding: 5%;
+  min-height: 80vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contact-form-wrapper h2 {
+  margin: 0;
+  color: #FD384B;
+  font-family: 'Nova Mono', monospace;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.contact-form-wrapper p {
+  margin-bottom: 20px;
+  width: 100%;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+form {
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border:0;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 2% 0;
+}
+
+form fieldset input, form fieldset textarea {
+  border: 0;
+  border-bottom: 1px solid rgba(196, 196, 196, 0.349);
+  width: 100%;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+form fieldset input:focus, form fieldset textarea:focus {
+  outline: none;
+}
+
+form fieldset textarea {
+  min-height: 150px;
+}
+
+form fieldset label {
+  text-align: right;
+  font-weight: 700;
+  font-size: 13px;
+  color: rgba(196, 196, 196, 0.849);
+}
+
+form button {
+  color: #fff;
+  background-color: #FD384B;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  width: 25%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+@media only screen and (max-width: 450px) {
+  .contact-form-wrapper {
+    width: 90%;
+    box-sizing: border-box;
+    margin: 100px auto 0 auto;
+  }
+
+  fieldset {
+    width: 100%;
+  }
+
+  form button {
+    width: 35%;
+  }
+}

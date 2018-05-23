@@ -1,0 +1,14 @@
+.title-wrapper {
+  background-image: url(./background-circles.svg);
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 0 5%;
+}
+
+.title-section {
+  font-family: "Nova Mono", monospace;
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}

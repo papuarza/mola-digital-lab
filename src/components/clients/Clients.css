@@ -1,0 +1,22 @@
+.row-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5% 0;
+    justify-content: center;
+}
+
+.logos-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 450px) {
+  .logos-wrapper {
+    justify-content: center;
+  }
+}

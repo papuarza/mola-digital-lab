@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import Header from './components/header.js'
-import Services from './components/services.js'
-import Works from './components/works.js'
-import Clients from './components/clients.js'
-import Footer from './components/footer.js'
+import Header from './components/header/index.js'
+import Services from './components/services/index.js'
+import Works from './components/works/index.js'
+import Clients from './components/clients/index.js'
+import Contact from './components/contact/index.js'
+import Footer from './components/footer/index.js'
 import './App.css';
 
 let services = [
@@ -31,6 +32,7 @@ class App extends Component {
         <Services services={services}></Services>
         <Works></Works>
         <Clients companies={companies}></Clients>
+        <Contact></Contact>
         <Footer></Footer>
       </div>
     );
