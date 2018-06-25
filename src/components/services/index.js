@@ -11,8 +11,8 @@ class Services extends Component {
     return (
       <div className="services-wrapper">
       {
-        this.props.services.map(service => {
-          return <Service data={service}></Service>
+        this.props.services.map((service, index) => {
+          return <Service data={service} key={index}></Service>
         })
       }
       </div>

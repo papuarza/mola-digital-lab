@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/header/index.js'
+import Menu from './components/menu/index.js'
 import Services from './components/services/index.js'
 import Works from './components/works/index.js'
 import Clients from './components/clients/index.js'
@@ -25,9 +26,21 @@ const companies = [
 ]
 
 class App extends Component {
+
+  componentDidMount() {
+    let menuTrigger = document.getElementById('menu-trigger');
+    if(menuTrigger) {
+      menuTrigger.addEventListener('click', () => {
+        let menu = document.getElementById('menu-wrapper');
+        console.log(menu)
+      })
+    }
+  }
+
   render() {
     return (
       <div className="App">
+        <Menu></Menu>
         <Header></Header>
         <Services services={services}></Services>
         <Works></Works>

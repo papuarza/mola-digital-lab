@@ -5,9 +5,9 @@
 }
 
 .description {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 100;
-    line-height: 35px;
+    line-height: 24px;
 }
 
 @media only screen and (max-width: 450px) {

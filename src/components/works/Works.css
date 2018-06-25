@@ -4,18 +4,26 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 5% 0;
+  padding: 0% 0;
   justify-content: center;
 }
 
-.description-wrapper {
+.description-wrapper-works {
   display: flex;
   align-items: center;
   margin-top: 15px;
 }
 
+.description-wrapper-works p {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 100;
+  text-align: left;
+}
+
 .works-image {
-  height: 450px;;
+  width: 600px;
+  margin-left: 80px;
 }
 
 
@@ -24,7 +32,16 @@
   .works-image {
     height: 250px;
     margin-bottom: 80px;
+    margin-left: 0;
   }
   
+  .description-wrapper-works {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .description-wrapper-works p {
+    padding: 0 5%;
+  }
 }
 

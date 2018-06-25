@@ -13,9 +13,9 @@ class Works extends Component {
     return (
       <div className="row-wrapper">
         <Title title="Trabajos"></Title>
-        <div className="description-wrapper">
-          <Description description={description}></Description>
-          <img src="images/screen-jobs.png" alt="" className="works-image"/>
+        <div className="description-wrapper-works">
+          <p> {description} </p>
+          <img src="images/works.svg" alt="" className="works-image"/>
         </div>
       </div>
       

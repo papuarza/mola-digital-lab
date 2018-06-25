@@ -41,15 +41,16 @@ header {
 
 .right-header-wrapper p {
   line-height: 30px;
-  font-weight: 300;
+  font-weight: 100;
   font-size: 20px;
 }
 
 @media only screen and (max-width: 450px) {
   header {
       flex-direction: column;
-      height: auto;
+      height: 100vh;
       padding: 10% 0;
+      justify-content: space-between;
   }
   .left-header-wrapper {
     width: 100%;
@@ -65,14 +66,21 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5vh;
   }
 
   .right-header-wrapper h2, .right-header-wrapper p {
     margin: 0;
   }
 
+  .right-header-wrapper img {
+    margin-bottom: 50px;
+    margin-top: 30px;
+    width: 200px;
+  }
+
   .right-header-wrapper h1 {
-    margin: 20px 0 0 0;
+    margin: 20px 0 0px 0;
     font-size: 30px;
   }
 
@@ -83,6 +91,10 @@ header {
 
   .right-header-wrapper h2 {
     margin-bottom: 30px;
+  }
+
+  .menu-trigger {
+    width: 30px;
   }
 
 }
